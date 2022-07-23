@@ -1,6 +1,7 @@
 import React from 'react';
 import ProfileImage from './ProfileImage';
 import PropTypes from 'prop-types';
+import Customers from './Customers';
 
 const Profile = ({fullName, bio, profession}) => {
     const handleName = (e) => {
@@ -27,6 +28,22 @@ const Profile = ({fullName, bio, profession}) => {
                 <h4 style={{margin: '0px 0px 10px 0px'}} >{profession}</h4>
                 <p style={{margin: '10px 0px 0px 0px', opacity: 0.8}}>{bio}</p>
             </div>
+
+            <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                textAlign: 'justify',
+                width: '300px',
+                height: '400px',
+                padding: '40px',
+                borderRadius: '8px',
+                outline: '10px solid #ffff',
+                backgroundColor: '#a5ffeb'
+            }}>
+                <Customers />
+            </div>
         </>
     );
 };
@@ -38,9 +55,9 @@ Profile.defaultProps = {
 };
 
 Profile.propTypes = {
-    fullName: PropTypes.number,
-    profession: PropTypes.number,
-    bio: PropTypes.number
+    fullName: PropTypes.string,
+    profession: PropTypes.string,
+    bio: PropTypes.string
 };
 
 export default Profile;
