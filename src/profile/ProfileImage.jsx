@@ -14,7 +14,7 @@ const ProfileImage = ({source}) => {
             width:'150px', 
             height: 'auto', 
             marginTop: '-15px'
-        }}/>
+        }} alt='Profile Image'/>
         </div>
     );
 };

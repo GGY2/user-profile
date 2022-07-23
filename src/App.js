@@ -17,7 +17,7 @@ function App() {
         React makes things much easier...`} 
         handleName={handleName}
         >
-          <ProfileImage source='./images/user.jpg' alt={'Profile Image'} />
+          <ProfileImage source='./images/user.jpg' />
         </Profile>
     </div>
   );
