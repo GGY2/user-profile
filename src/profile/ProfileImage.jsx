@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProfileImage = ({handleName, source}) => {
+const ProfileImage = ({source}) => {
     return(
         <div style={{
             height: '150px', 
@@ -14,7 +14,7 @@ const ProfileImage = ({handleName, source}) => {
             width:'150px', 
             height: 'auto', 
             marginTop: '-15px'
-        }} onMouseOver={(e) => handleName(e)} />
+        }}/>
         </div>
     );
 };
